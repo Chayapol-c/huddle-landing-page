@@ -1,136 +1,138 @@
-*{
-    margin: 0;
-    padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    min-height: 100vh;
-    width: 100%;
-    height: 100%;
-    background-color: hsl(257, 40%, 49%);
+body {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(257, 40%, 49%);
 }
 
-.background{
-    background-image: url("./images/bg-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-family: "Poppins";
-    height: 100vh;
+.background {
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins";
+  height: 100vh;
 }
 
-.main-container{
-    display: flex;
-    height: 100vh;
-    padding: 0 4rem;
+.main-container {
+  display: flex;
+  height: 100vh;
+  padding: 0 4rem;
 }
 
-
-.img-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    margin-right: 3rem;
-    padding-top: 2rem;
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin-right: 3rem;
+  padding-top: 2rem;
 }
 
-.logo{
-    margin-bottom: 5rem ;
-    width: 30%;
+.logo {
+  margin-bottom: 5rem;
+  width: 30%;
 }
 
-.illust{
-    width: 100%;
+.illust {
+  width: 100%;
 }
 
-.text-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    position: relative;
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
 }
 
 .header p {
-    font-size: 3em;
-    font-weight: 600 ;
+  font-size: 3em;
+  font-weight: 600;
 }
 
-.detail{
-    margin: 1.5rem 0rem;
-    font-weight: 200;
-    font-size: 1.1em;
-
+.detail {
+  margin: 1.5rem 0rem;
+  font-weight: 200;
+  font-size: 1.1em;
 }
 
-.button{
-    color:  hsl(257, 40%, 49%);
-    background-color: white;
-    padding: 1rem 4rem;
-    border-radius: 3rem;
-    width: 4rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0,0.5) , 4px 0 6px -2px rgba(0, 0, 0, 0.5);
+.button {
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  padding: 1rem 4rem;
+  border-radius: 3rem;
+  width: 4rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5),
+    4px 0 6px -2px rgba(0, 0, 0, 0.5);
 }
 
-.button:hover{
-    color: #ffffff;
-    background-color: hsl(300, 69%, 71%)
+.button:hover {
+  color: #ffffff;
+  background-color: hsl(300, 69%, 71%);
 }
 
-.contact-container{
-    display: flex;
-    justify-content: flex-end;
-    /* border: 1px solid black; */
-    position: absolute;
-    bottom: 2rem;
-    right: 0;
+.contact-container {
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid black; */
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
 }
 
-.contact-container img{
-    margin: 0 0.5rem;
+.contact-container img {
+  margin: 0 0.5rem;
 }
 
-@media screen and (max-width: 375px){
-    .main-container{
-        padding: 0 2rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .background{
-        background-image: url("./images/bg-mobile.svg");
-    }
+.contact-container img:hover {
+  background-color: hsl(300, 69%, 71%);
+}
 
-    .img-container{
-        margin-bottom: 1rem;
-    }
-    .logo{
-        margin: 0;
-    }
+@media screen and (max-width: 375px) {
+  .main-container {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+  .background {
+    background-image: url("./images/bg-mobile.svg");
+  }
 
+  .img-container {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0;
+    height: 50%;
+  }
+  .logo {
+    width: 50%;
+    margin: 2rem 0 3rem 0;
+  }
 
-    .illust img{
-        width: 100%;
-        /* border: 1px solid black; */
-    }
+  .illust img {
+    width: 100%;
+  }
 
-    .text-container{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+  .text-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-    .header p {
-        font-size: 1.5em;
-    }
-    
-    .detail{
-        font-size: 0.96em;
-    }
+  .header p {
+    font-size: 1.5em;
+  }
 
-    .button{
-        padding: 0.5rem 4rem;
-    }
+  .detail {
+    font-size: 0.96em;
+  }
+
+  .button {
+    padding: 0.5rem 4rem;
+  }
 }
